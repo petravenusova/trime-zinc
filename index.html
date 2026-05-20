@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zinc supplements — benefits, deficiency and best forms | Trime</title>
+<title>Zinc substance guide — benefits, deficiency and best forms | Trime</title>
 <meta name="description" content="What does zinc do in the body, who needs it and how to choose the right form? Everything you need to know about zinc supplementation, backed by science.">
 <style>
   :root {
@@ -18,438 +18,120 @@
     --text-light: #666;
     --border: #ededed;
     --white: #ffffff;
+    --placeholder-bg: #f9f6ee;
+    --placeholder-border: #f6b838;
+    --placeholder-text: #8a6000;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Inter, -apple-system, sans-serif; background: var(--cream); color: var(--text-dark); line-height: 1.7; }
 
-  body {
-    font-family: Inter, -apple-system, sans-serif;
-    background: var(--cream);
-    color: var(--text-dark);
-    line-height: 1.7;
-  }
-
-  /* NAV */
-  nav {
-    background: var(--green-dark);
-    padding: 16px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-logo {
-    color: var(--white);
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
+  nav { background: var(--green-dark); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { color: var(--white); font-size: 20px; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; display: flex; align-items: center; gap: 8px; }
   .nav-logo svg { width: 28px; height: 28px; }
-
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    list-style: none;
-  }
-
-  .nav-links a {
-    color: rgba(255,255,255,0.75);
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.2s;
-  }
-
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; }
   .nav-links a:hover { color: var(--white); }
 
-  /* HERO */
-  .hero {
-    background: var(--green-dark);
-    color: var(--white);
-    padding: 80px 40px 64px;
-    text-align: center;
-  }
-
-  .hero-eyebrow {
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 16px;
-    font-weight: 500;
-  }
-
-  .hero h1 {
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 700;
-    line-height: 1.15;
-    max-width: 720px;
-    margin: 0 auto 20px;
-    letter-spacing: -0.02em;
-  }
-
-  .hero-intro {
-    font-size: 18px;
-    color: rgba(255,255,255,0.75);
-    max-width: 600px;
-    margin: 0 auto 36px;
-    line-height: 1.65;
-  }
-
-  .hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    flex-wrap: wrap;
-    margin-top: 48px;
-    padding-top: 40px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-  }
-
+  .hero { background: var(--green-dark); color: var(--white); padding: 80px 40px 64px; text-align: center; }
+  .hero-eyebrow { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; font-weight: 500; }
+  .hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 700; line-height: 1.15; max-width: 720px; margin: 0 auto 20px; letter-spacing: -0.02em; }
+  .hero-intro { font-size: 18px; color: rgba(255,255,255,0.75); max-width: 600px; margin: 0 auto 36px; line-height: 1.65; }
+  .hero-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 48px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.12); }
   .hero-stat { text-align: center; }
+  .hero-stat-value { display: block; font-size: 36px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+  .hero-stat-label { font-size: 13px; color: rgba(255,255,255,0.6); letter-spacing: 0.04em; }
 
-  .hero-stat-value {
-    display: block;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--gold);
-    line-height: 1;
-    margin-bottom: 6px;
-  }
+  .main { max-width: 1100px; margin: 0 auto; padding: 64px 40px; }
 
-  .hero-stat-label {
-    font-size: 13px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.04em;
-  }
+  .section-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin-bottom: 10px; }
+  .section-title { font-size: 28px; font-weight: 700; color: var(--green-dark); margin-bottom: 12px; letter-spacing: -0.01em; }
+  .section-intro { font-size: 16px; color: var(--text-mid); max-width: 680px; margin-bottom: 40px; line-height: 1.7; }
 
-  /* MAIN LAYOUT */
-  .main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 64px 40px;
-  }
+  .placeholder-note { background: var(--placeholder-bg); border: 1px solid var(--placeholder-border); border-radius: 8px; padding: 10px 14px; font-size: 13px; color: var(--placeholder-text); margin-bottom: 16px; }
 
-  /* SECTION HEADERS */
-  .section-label {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--gold-dark);
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
+  /* BENEFITS — list style */
+  .benefits-list { display: flex; flex-direction: column; gap: 2px; margin-bottom: 24px; }
+  .benefit-row { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; display: flex; align-items: center; gap: 16px; }
+  .benefit-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+  .benefit-text { font-size: 15px; color: var(--text-dark); font-weight: 500; }
+  .benefit-link { margin-left: auto; font-size: 13px; color: var(--gold-dark); text-decoration: none; white-space: nowrap; font-weight: 600; }
+  .benefit-link:hover { text-decoration: underline; }
+  .benefit-article-link { display: inline-block; margin-top: 20px; background: var(--white); border: 1px solid var(--green-dark); color: var(--green-dark); text-decoration: none; padding: 11px 22px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+  .benefit-article-link:hover { background: var(--green-dark); color: var(--white); }
 
-  .section-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--green-dark);
-    margin-bottom: 12px;
-    letter-spacing: -0.01em;
-  }
-
-  .section-intro {
-    font-size: 16px;
-    color: var(--text-mid);
-    max-width: 680px;
-    margin-bottom: 40px;
-    line-height: 1.7;
-  }
-
-  /* BENEFITS GRID */
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    margin-bottom: 72px;
-  }
-
-  .benefit-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 28px 24px;
-  }
-
-  .benefit-icon {
-    width: 44px;
-    height: 44px;
-    background: #f0f8f0;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-
-  .benefit-icon svg { width: 22px; height: 22px; stroke: var(--green-dark); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-
-  .benefit-card h3 {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--green-dark);
-    margin-bottom: 8px;
-  }
-
-  .benefit-card p {
-    font-size: 14px;
-    color: var(--text-mid);
-    line-height: 1.6;
-  }
+  /* YOUTUBE */
+  .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 72px; }
+  .video-placeholder { background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .video-thumb { background: #1a1a2e; height: 150px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .video-play { width: 48px; height: 48px; background: rgba(246,184,56,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .video-play svg { width: 20px; height: 20px; fill: var(--green-dark); margin-left: 3px; }
+  .video-badge { position: absolute; top: 10px; left: 10px; background: var(--placeholder-bg); border: 1px solid var(--placeholder-border); color: var(--placeholder-text); font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 4px; letter-spacing: 0.06em; }
+  .video-body { padding: 16px; }
+  .video-tag { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin-bottom: 6px; }
+  .video-title { font-size: 14px; font-weight: 600; color: var(--green-dark); line-height: 1.4; }
 
   /* FAQ */
   .faq-section { margin-bottom: 72px; }
-
   .faq-list { display: flex; flex-direction: column; gap: 2px; }
-
-  .faq-item {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .faq-item + .faq-item { border-radius: 10px; }
-
-  .faq-question {
-    width: 100%;
-    text-align: left;
-    background: none;
-    border: none;
-    padding: 22px 24px;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--green-dark);
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    transition: background 0.15s;
-  }
-
+  .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 20px 22px; font-size: 15px; font-weight: 600; color: var(--green-dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
   .faq-question:hover { background: #f9f9f9; }
-
-  .faq-chevron {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    stroke: var(--gold-dark);
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: transform 0.2s;
-  }
-
+  .faq-chevron { width: 20px; height: 20px; flex-shrink: 0; stroke: var(--gold-dark); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.2s; }
   .faq-item.open .faq-chevron { transform: rotate(180deg); }
-
-  .faq-answer {
-    display: none;
-    padding: 0 24px 22px;
-    font-size: 15px;
-    color: var(--text-mid);
-    line-height: 1.75;
-    border-top: 1px solid var(--border);
-    padding-top: 18px;
-  }
-
+  .faq-answer { display: none; padding: 0 22px 20px; font-size: 15px; color: var(--text-mid); line-height: 1.75; border-top: 1px solid var(--border); padding-top: 16px; }
   .faq-item.open .faq-answer { display: block; }
-
   .faq-answer strong { color: var(--text-dark); }
+  .faq-read-more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--gold-dark); text-decoration: none; }
+  .faq-read-more:hover { text-decoration: underline; }
 
   /* PRODUCTS */
   .products-section { margin-bottom: 72px; }
+  .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .product-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+  .product-img { background: var(--cream); height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid var(--border); flex-direction: column; gap: 8px; }
+  .product-img svg { width: 70px; height: 70px; stroke: var(--green-dark); fill: none; stroke-width: 1; opacity: 0.2; }
+  .product-img-label { font-size: 11px; color: var(--text-light); }
+  .product-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+  .product-badge { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; background: #f0f8f0; color: var(--green-dark); padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
+  .product-name { font-size: 17px; font-weight: 700; color: var(--green-dark); margin-bottom: 6px; line-height: 1.3; }
+  .product-desc { font-size: 14px; color: var(--text-mid); line-height: 1.6; flex: 1; margin-bottom: 14px; }
 
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
+  /* REVIEWS */
+  .product-reviews { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding: 10px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stars { display: flex; gap: 2px; }
+  .star { width: 14px; height: 14px; fill: var(--gold); }
+  .star.empty { fill: #e0e0e0; }
+  .review-score { font-size: 14px; font-weight: 700; color: var(--text-dark); }
+  .review-count { font-size: 13px; color: var(--text-light); }
+  .review-placeholder { font-size: 11px; color: var(--placeholder-text); background: var(--placeholder-bg); border: 1px solid var(--placeholder-border); border-radius: 4px; padding: 2px 7px; margin-left: auto; }
 
-  .product-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .product-img {
-    background: var(--cream);
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .product-img svg {
-    width: 80px;
-    height: 80px;
-    stroke: var(--green-dark);
-    fill: none;
-    stroke-width: 1;
-    opacity: 0.25;
-  }
-
-  .product-img-label {
-    font-size: 12px;
-    color: var(--text-light);
-    text-align: center;
-  }
-
-  .product-img-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .product-body { padding: 22px 20px; flex: 1; display: flex; flex-direction: column; }
-
-  .product-badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    background: #f0f8f0;
-    color: var(--green-dark);
-    padding: 3px 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-  }
-
-  .product-name {
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--green-dark);
-    margin-bottom: 8px;
-    line-height: 1.3;
-  }
-
-  .product-desc {
-    font-size: 14px;
-    color: var(--text-mid);
-    line-height: 1.6;
-    flex: 1;
-    margin-bottom: 18px;
-  }
-
-  .product-cta {
-    display: block;
-    text-align: center;
-    background: var(--green-dark);
-    color: var(--white);
-    text-decoration: none;
-    padding: 11px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: background 0.2s;
-  }
-
+  .product-cta { display: block; text-align: center; background: var(--green-dark); color: var(--white); text-decoration: none; padding: 11px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; }
   .product-cta:hover { background: var(--green-mid); }
 
   /* ARTICLES */
   .articles-section { margin-bottom: 72px; }
+  .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .article-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; transition: border-color 0.2s; }
+  .article-card:hover { border-color: var(--green-dark); }
+  .article-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-dark); }
+  .article-title { font-size: 15px; font-weight: 600; color: var(--green-dark); line-height: 1.4; }
+  .article-excerpt { font-size: 13px; color: var(--text-mid); line-height: 1.6; }
+  .article-arrow { margin-top: auto; font-size: 13px; font-weight: 600; color: var(--gold-dark); display: flex; align-items: center; gap: 5px; }
+  .article-arrow svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; }
+  .article-card.placeholder-card { border-style: dashed; border-color: var(--placeholder-border); background: var(--placeholder-bg); }
+  .article-card.placeholder-card .article-title { color: var(--placeholder-text); }
+  .article-card.placeholder-card .article-tag { color: var(--placeholder-text); }
 
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-
-  .article-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-decoration: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-
-  .article-card:hover {
-    border-color: var(--green-dark);
-  }
-
-  .article-tag {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold-dark);
-  }
-
-  .article-title {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--green-dark);
-    line-height: 1.4;
-  }
-
-  .article-excerpt {
-    font-size: 14px;
-    color: var(--text-mid);
-    line-height: 1.6;
-  }
-
-  .article-arrow {
-    margin-top: auto;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--gold-dark);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .article-arrow svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; }
-
-  /* DIVIDER */
   .divider { border: none; border-top: 1px solid var(--border); margin: 64px 0; }
-
-  /* PLACEHOLDER NOTE */
-  .placeholder-note {
-    background: #fffbf0;
-    border: 1px solid #f6b838;
-    border-radius: 8px;
-    padding: 12px 16px;
-    font-size: 13px;
-    color: #8a6000;
-    margin-bottom: 20px;
-  }
-
-  /* FOOTER */
-  footer {
-    background: var(--green-dark);
-    color: rgba(255,255,255,0.5);
-    text-align: center;
-    padding: 32px 40px;
-    font-size: 13px;
-  }
-
+  footer { background: var(--green-dark); color: rgba(255,255,255,0.5); text-align: center; padding: 32px 40px; font-size: 13px; }
   footer a { color: rgba(255,255,255,0.5); }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="14" cy="14" r="13" stroke="#f6b838" stroke-width="1.5"/>
-      <path d="M8 14a6 6 0 0 1 12 0" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-    </svg>
+    <svg viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" stroke="#f6b838" stroke-width="1.5"/><path d="M8 14a6 6 0 0 1 12 0" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
     trime
   </a>
   <ul class="nav-links">
@@ -460,12 +142,10 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <p class="hero-eyebrow">Substance guide</p>
-  <h1>Zinc: what it does, who needs it and how to supplement it</h1>
+  <h1>Zinc substance guide</h1>
   <p class="hero-intro">Zinc is involved in over 300 enzymatic reactions in the body. It supports immunity, skin health, hormonal balance and wound healing — yet deficiency is common and often unrecognised.</p>
-
   <div class="hero-stats">
     <div class="hero-stat">
       <span class="hero-stat-value">300+</span>
@@ -482,65 +162,109 @@
   </div>
 </div>
 
-<!-- MAIN -->
 <main class="main">
 
-  <!-- BENEFITS -->
-  <section>
+  <!-- KEY FUNCTIONS -->
+  <section style="margin-bottom: 72px;">
     <p class="section-label">What zinc does</p>
     <h2 class="section-title">Key functions of zinc in the body</h2>
     <p class="section-intro">Zinc is an essential trace mineral — your body cannot produce or store it, so regular intake through diet or supplementation is necessary.</p>
 
-    <div class="benefits-grid">
+    <div class="placeholder-note">📌 Placeholder — each function below will link to a dedicated blog article covering that subtopic in depth.</div>
 
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Immune system support</h3>
-        <p>Zinc is essential for the development and function of immune cells. Even mild deficiency impairs immune response and increases susceptibility to infection.</p>
+    <div class="benefits-list">
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Immune system support</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        </div>
-        <h3>Skin, hair and nails</h3>
-        <p>Zinc supports collagen synthesis and cell renewal. It is one of the most studied minerals in the context of acne, wound healing and hair loss.</p>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Skin, hair and nail health</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/><path d="M12 8v4l3 3"/></svg>
-        </div>
-        <h3>Hormonal balance</h3>
-        <p>Zinc plays a role in testosterone production and thyroid hormone metabolism. It is particularly relevant for men's health and reproductive function.</p>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Hormonal balance and testosterone production</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
-        </div>
-        <h3>Antioxidant defence</h3>
-        <p>Zinc is a component of superoxide dismutase (SOD), one of the body's primary antioxidant enzymes. It helps protect cells from oxidative stress.</p>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Antioxidant defence (SOD enzyme)</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12l4-4"/><circle cx="18" cy="6" r="3"/></svg>
-        </div>
-        <h3>Cognitive function</h3>
-        <p>Zinc modulates neurotransmitter activity and is concentrated in areas of the brain involved in learning and memory. Deficiency has been linked to cognitive decline.</p>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Cognitive function and memory</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
-
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
-        <h3>Fertility and pregnancy</h3>
-        <p>Zinc is critical for DNA synthesis, cell division and fetal development. Both deficiency and excess can affect fertility in men and women.</p>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Fertility and fetal development</span>
+        <a href="#" class="benefit-link">Read article →</a>
       </div>
+      <div class="benefit-row">
+        <div class="benefit-dot"></div>
+        <span class="benefit-text">Wound healing and cell renewal</span>
+        <a href="#" class="benefit-link">Read article →</a>
+      </div>
+    </div>
 
+    <div class="placeholder-note" style="margin-top: 20px;">📌 Placeholder — link to full overview article: "What are the health benefits of zinc?" (to be published)</div>
+    <a href="#" class="benefit-article-link">Read the full article on zinc benefits →</a>
+  </section>
+
+  <hr class="divider">
+
+  <!-- YOUTUBE -->
+  <section style="margin-bottom: 72px;">
+    <p class="section-label">Watch & learn</p>
+    <h2 class="section-title">Videos about zinc</h2>
+    <p class="section-intro">Short videos and in-depth content on zinc — from our YouTube channel.</p>
+
+    <div class="placeholder-note">📌 Placeholder — embed actual YouTube videos or Shorts once published. Suggested topics below.</div>
+
+    <div class="video-grid">
+      <div class="video-placeholder">
+        <div class="video-thumb">
+          <span class="video-badge">PLACEHOLDER</span>
+          <div class="video-play"><svg viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg></div>
+        </div>
+        <div class="video-body">
+          <p class="video-tag">Short · 60 sec</p>
+          <p class="video-title">Signs of zinc deficiency you might be ignoring</p>
+        </div>
+      </div>
+      <div class="video-placeholder">
+        <div class="video-thumb">
+          <span class="video-badge">PLACEHOLDER</span>
+          <div class="video-play"><svg viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg></div>
+        </div>
+        <div class="video-body">
+          <p class="video-tag">Short · 90 sec</p>
+          <p class="video-title">Zinc bisglycinate vs zinc oxide — which form is actually absorbed?</p>
+        </div>
+      </div>
+      <div class="video-placeholder">
+        <div class="video-thumb">
+          <span class="video-badge">PLACEHOLDER</span>
+          <div class="video-play"><svg viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg></div>
+        </div>
+        <div class="video-body">
+          <p class="video-tag">Video · 8 min</p>
+          <p class="video-title">Zinc and immunity: what the evidence actually says</p>
+        </div>
+      </div>
+      <div class="video-placeholder">
+        <div class="video-thumb">
+          <span class="video-badge">PLACEHOLDER</span>
+          <div class="video-play"><svg viewBox="0 0 20 20"><polygon points="5,3 19,10 5,17"/></svg></div>
+        </div>
+        <div class="video-body">
+          <p class="video-tag">Short · 60 sec</p>
+          <p class="video-title">Does zinc help with acne? What science says</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -550,7 +274,7 @@
   <section class="faq-section">
     <p class="section-label">Common questions</p>
     <h2 class="section-title">Zinc — your questions answered</h2>
-    <p class="section-intro">The most common questions about zinc supplementation, answered based on current scientific evidence.</p>
+    <p class="section-intro">The most common questions about zinc supplementation, with links to full articles on each subtopic.</p>
 
     <div class="faq-list">
 
@@ -560,7 +284,8 @@
           <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          Zinc deficiency is often subtle. The most common signs include <strong>frequent infections or slow recovery from illness</strong>, hair thinning or loss, delayed wound healing, white spots on nails, dry skin, reduced sense of taste or smell, and — in more severe cases — impaired growth in children. A blood test can confirm deficiency, though serum zinc levels don't always reflect tissue zinc status accurately.
+          Zinc deficiency is often subtle. The most common signs include <strong>frequent infections or slow recovery from illness</strong>, hair thinning, delayed wound healing, white spots on nails, dry skin, and reduced sense of taste or smell. A blood test can confirm deficiency.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "Signs of zinc deficiency — how to recognise it" →</a>
         </div>
       </div>
 
@@ -570,7 +295,8 @@
           <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          Not all zinc forms are absorbed equally. <strong>Zinc bisglycinate</strong> (zinc bound to the amino acid glycine) has high bioavailability and is gentle on the stomach — making it a good choice for daily use. <strong>Zinc citrate</strong> is also well absorbed. Zinc oxide and zinc sulphate are common in cheaper supplements but have lower absorption rates. Avoid supplements that don't specify the form.
+          <strong>Zinc bisglycinate</strong> has high bioavailability and is gentle on the stomach. Zinc citrate is also well absorbed. Zinc oxide and zinc sulphate are common in cheaper supplements but have lower absorption rates.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "Zinc bisglycinate vs other forms — which is best?" →</a>
         </div>
       </div>
 
@@ -580,7 +306,8 @@
           <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          The EU reference intake is <strong>10 mg per day for adults</strong>. Most supplements contain 10–25 mg. The EFSA tolerable upper intake level is 25 mg per day — exceeding this consistently can interfere with copper absorption. If supplementing for a specific reason (e.g. acne, immune support), 15–25 mg daily is common, but long-term high doses should be discussed with a healthcare professional.
+          The EU reference intake is <strong>10 mg per day for adults</strong>. The EFSA tolerable upper intake level is 25 mg per day — exceeding this consistently can interfere with copper absorption.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "How much zinc do you need per day?" →</a>
         </div>
       </div>
 
@@ -590,27 +317,8 @@
           <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          Zinc can cause nausea when taken on an empty stomach — taking it <strong>with a small meal</strong> reduces this. Avoid taking zinc alongside high-phytate foods (whole grains, legumes) or calcium supplements, as these can reduce absorption. Zinc and iron supplements also compete for absorption — space them apart if taking both.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Who is most at risk of zinc deficiency?
-          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq-answer">
-          Groups with higher risk include <strong>vegetarians and vegans</strong> (plant zinc is less bioavailable), older adults, pregnant and breastfeeding women, people with digestive conditions that affect absorption (Crohn's disease, celiac disease), and athletes with high sweat losses. Children with poor dietary variety are also at risk.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFaq(this)">
-          Can I get enough zinc from diet alone?
-          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="faq-answer">
-          The best dietary sources of zinc are <strong>oysters, red meat, poultry and shellfish</strong>. Plant-based sources include pumpkin seeds, legumes, whole grains and nuts — but these contain phytates that reduce zinc absorption. A varied diet including animal protein usually provides adequate zinc; those following a plant-based diet may benefit from supplementation or soaking/fermenting legumes to reduce phytate content.
+          Take zinc <strong>with a small meal</strong> to avoid nausea. Avoid taking it alongside high-phytate foods or calcium supplements. Space zinc and iron supplements apart.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "When and how to take zinc supplements" →</a>
         </div>
       </div>
 
@@ -620,7 +328,30 @@
           <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="faq-answer">
-          Zinc has anti-inflammatory properties and inhibits the growth of <em>Cutibacterium acnes</em>, the bacteria associated with acne. Several clinical trials have shown modest benefits for mild-to-moderate acne. <strong>Zinc is not as effective as prescription treatments</strong> for severe acne, but it is a well-tolerated option for mild cases and for those who cannot use antibiotics. Zinc bisglycinate or zinc citrate at 25–30 mg daily are the forms most studied in this context.
+          Zinc has anti-inflammatory properties and inhibits <em>Cutibacterium acnes</em>. Clinical trials show modest benefits for mild-to-moderate acne. It is not as effective as prescription treatments for severe cases.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "Does zinc help with acne? What science says" →</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Who is most at risk of zinc deficiency?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          Higher-risk groups include <strong>vegetarians and vegans</strong>, older adults, pregnant and breastfeeding women, people with digestive conditions, and athletes with high sweat losses.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "Who is at risk of zinc deficiency?" →</a>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can I get enough zinc from diet alone?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          Best dietary sources: <strong>oysters, red meat, poultry and shellfish</strong>. Plant sources (pumpkin seeds, legumes, whole grains) contain phytates that reduce absorption. A plant-based diet may benefit from supplementation.
+          <br><a href="#" class="faq-read-more">📌 Read full article: "Best dietary sources of zinc" →</a>
         </div>
       </div>
 
@@ -639,36 +370,50 @@
 
       <div class="product-card">
         <div class="product-img">
-          <div class="product-img-wrap">
-            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-              <rect x="20" y="10" width="40" height="60" rx="8" stroke-width="1.5"/>
-              <rect x="30" y="5" width="20" height="10" rx="3" stroke-width="1.2"/>
-            </svg>
-            <span class="product-img-label">Product image placeholder</span>
-          </div>
+          <svg viewBox="0 0 80 80"><rect x="20" y="10" width="40" height="60" rx="8" stroke-width="1.5"/><rect x="30" y="5" width="20" height="10" rx="3" stroke-width="1.2"/></svg>
+          <span class="product-img-label">Product image placeholder</span>
         </div>
         <div class="product-body">
           <span class="product-badge">Best seller</span>
           <h3 class="product-name">Magnesium Zinc B6</h3>
           <p class="product-desc">A synergistic combination of magnesium bisglycinate, zinc bisglycinate and vitamin B6. Supports immune function, energy metabolism and the nervous system.</p>
+          <div class="product-reviews">
+            <div class="stars">
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+            </div>
+            <span class="review-score">4.9</span>
+            <span class="review-count">(placeholder)</span>
+            <span class="review-placeholder">PLACEHOLDER</span>
+          </div>
           <a href="https://trime.cz/products/magnesium-zinc-b6" class="product-cta">View product</a>
         </div>
       </div>
 
       <div class="product-card">
         <div class="product-img">
-          <div class="product-img-wrap">
-            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-              <rect x="20" y="10" width="40" height="60" rx="8" stroke-width="1.5"/>
-              <rect x="30" y="5" width="20" height="10" rx="3" stroke-width="1.2"/>
-            </svg>
-            <span class="product-img-label">Product image placeholder</span>
-          </div>
+          <svg viewBox="0 0 80 80"><rect x="20" y="10" width="40" height="60" rx="8" stroke-width="1.5"/><rect x="30" y="5" width="20" height="10" rx="3" stroke-width="1.2"/></svg>
+          <span class="product-img-label">Product image placeholder</span>
         </div>
         <div class="product-body">
           <span class="product-badge">Daily essential</span>
           <h3 class="product-name">Daily F20 Complex</h3>
           <p class="product-desc">A complete daily multivitamin providing 20 essential nutrients in optimal forms — including zinc bisglycinate. Designed as a reliable nutritional foundation for adults.</p>
+          <div class="product-reviews">
+            <div class="stars">
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+              <svg class="star" viewBox="0 0 16 16"><polygon points="8,1 10,6 15,6 11,9.5 12.5,15 8,11.5 3.5,15 5,9.5 1,6 6,6"/></svg>
+            </div>
+            <span class="review-score">4.8</span>
+            <span class="review-count">(placeholder)</span>
+            <span class="review-placeholder">PLACEHOLDER</span>
+          </div>
           <a href="https://trime.cz/products/multivitamin-key-nutrients" class="product-cta">View product</a>
         </div>
       </div>
@@ -684,46 +429,54 @@
     <h2 class="section-title">Articles about zinc</h2>
     <p class="section-intro">Go deeper into specific topics related to zinc, immunity and supplementation.</p>
 
-    <div class="placeholder-note">
-      ℹ️ <strong>Placeholder:</strong> These article cards will link to published blog articles. Titles and excerpts are illustrative examples of well-optimised headings targeting real search queries.
-    </div>
-
     <div class="articles-grid">
-
-      <a href="#" class="article-card">
-        <span class="article-tag">Immunity</span>
-        <h3 class="article-title">Zinc and immune function: what the evidence actually says</h3>
-        <p class="article-excerpt">A look at the clinical evidence behind zinc supplementation for immune support — including dosing, timing and what it can and cannot do.</p>
-        <span class="article-arrow">Read article <svg viewBox="0 0 14 14"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
-      </a>
-
-      <a href="#" class="article-card">
-        <span class="article-tag">Skin health</span>
-        <h3 class="article-title">Does zinc help with acne? What science says</h3>
-        <p class="article-excerpt">Zinc has anti-inflammatory and antibacterial properties relevant to acne. Here is what the research shows and how to use it effectively.</p>
-        <span class="article-arrow">Read article <svg viewBox="0 0 14 14"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
-      </a>
-
-      <a href="#" class="article-card">
-        <span class="article-tag">Men's health</span>
-        <h3 class="article-title">Zinc and testosterone: what is the real connection?</h3>
-        <p class="article-excerpt">Zinc plays a role in testosterone synthesis. But does supplementing zinc actually raise testosterone levels? The answer depends on your baseline.</p>
-        <span class="article-arrow">Read article <svg viewBox="0 0 14 14"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
-      </a>
 
       <a href="https://mytrime.com/blogs/news/zinc-and-mens-health-why-is-it-important-and-what-does-it-affect" class="article-card">
         <span class="article-tag">Existing article</span>
-        <h3 class="article-title">Zinc and men's health — why is it important and what does it affect?</h3>
-        <p class="article-excerpt">An existing Trime article covering zinc's role in men's health — candidate for semantic optimisation and H1 rewrite.</p>
+        <h3 class="article-title">Zinc and men's health — why is it important?</h3>
+        <p class="article-excerpt">Zinc's role in testosterone, fertility and men's health. Candidate for semantic optimisation.</p>
         <span class="article-arrow">Read article <svg viewBox="0 0 14 14"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span>
+      </a>
+
+      <a href="#" class="article-card placeholder-card">
+        <span class="article-tag">📌 Placeholder</span>
+        <h3 class="article-title">Signs of zinc deficiency — how to recognise it</h3>
+        <p class="article-excerpt">Article to be created. Target keyword: "signs of zinc deficiency" / "zinc deficiency symptoms".</p>
+        <span class="article-arrow" style="color: var(--placeholder-text);">Placeholder →</span>
+      </a>
+
+      <a href="#" class="article-card placeholder-card">
+        <span class="article-tag">📌 Placeholder</span>
+        <h3 class="article-title">Does zinc help with acne? What science says</h3>
+        <p class="article-excerpt">Article to be created. Target keyword: "zinc for acne" / "does zinc help acne".</p>
+        <span class="article-arrow" style="color: var(--placeholder-text);">Placeholder →</span>
+      </a>
+
+      <a href="#" class="article-card placeholder-card">
+        <span class="article-tag">📌 Placeholder</span>
+        <h3 class="article-title">Zinc bisglycinate vs other forms — which is best?</h3>
+        <p class="article-excerpt">Article to be created. Target keyword: "best form of zinc supplement" / "zinc bisglycinate".</p>
+        <span class="article-arrow" style="color: var(--placeholder-text);">Placeholder →</span>
       </a>
 
     </div>
   </section>
 
+  <!-- CTA -->
+  <section style="margin-bottom: 72px; text-align: center;">
+    <div style="background: var(--green-dark); border-radius: 16px; padding: 56px 40px;">
+      <p style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 14px;">Trime zinc range</p>
+      <h2 style="font-size: 32px; font-weight: 700; color: var(--white); margin-bottom: 14px; letter-spacing: -0.01em;">Discover our zinc supplements</h2>
+      <p style="font-size: 16px; color: rgba(255,255,255,0.7); max-width: 480px; margin: 0 auto 32px; line-height: 1.65;">Real ingredients, verified forms, no unnecessary fillers. Browse the full Trime zinc range.</p>
+      <a href="https://trime.cz/collections/zinc" style="display: inline-block; background: var(--gold); color: var(--green-dark); text-decoration: none; padding: 14px 36px; border-radius: 8px; font-size: 15px; font-weight: 700; letter-spacing: 0.01em;">Browse all zinc products →</a>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+
 </main>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 Trime — real ingredients, real science. &nbsp;|&nbsp; <a href="#">Privacy policy</a> &nbsp;|&nbsp; <a href="#">Terms</a></p>
 </footer>
@@ -736,6 +489,5 @@ function toggleFaq(btn) {
   if (!isOpen) item.classList.add('open');
 }
 </script>
-
 </body>
 </html>
